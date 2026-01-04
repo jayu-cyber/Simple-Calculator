@@ -1,0 +1,107 @@
+/* Reset and Base Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Creative background gradient */
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+}
+
+/* Calculator Container Styling */
+.calculator {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    width: 400px;
+    max-width: 90%;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Display Screen Styling */
+.display-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    min-height: 120px;
+}
+
+.previous-operand {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.2rem;
+    min-height: 1.5rem;
+}
+
+.current-operand {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Buttons Grid System */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button Styling */
+.buttons-grid button {
+    height: 60px;
+    font-size: 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out, filter 0.2s;
+}
+
+.buttons-grid button:hover {
+    filter: brightness(110%);
+    transform: scale(1.02);
+}
+
+.buttons-grid button:active {
+    transform: scale(0.95);
+}
+
+/* Special Button Classes */
+.span-two {
+    grid-column: span 2;
+}
+
+/* Customizing Bootstrap buttons overrides if needed */
+.btn-dark {
+    background-color: #333;
+    border-color: #333;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #ff9f43;
+    border-color: #ff9f43;
+}
+
+.btn-danger {
+    background-color: #ff5252;
+    border-color: #ff5252;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.btn-info {
+    color: white;
+    background-color: #0abde3;
+    border-color: #0abde3;
+}

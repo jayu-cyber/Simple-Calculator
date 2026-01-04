@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="calculator shadow-lg p-3 mb-5 rounded">
+            <!-- Display Screen -->
+            <div class="display-container mb-3">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand">0</div>
+            </div>
+
+            <!-- Calculator Buttons Grid -->
+            <div class="buttons-grid">
+                <!-- Row 1 -->
+                <button class="btn btn-danger span-two" data-all-clear>AC</button>
+                <button class="btn btn-secondary" data-operation="delete">DEL</button>
+                <button class="btn btn-warning" data-operation="÷">/</button>
+
+                <!-- Row 2 -->
+                <button class="btn btn-dark" data-number>1</button>
+                <button class="btn btn-dark" data-number>2</button>
+                <button class="btn btn-dark" data-number>3</button>
+                <button class="btn btn-warning" data-operation="*">*</button>
+
+                <!-- Row 3 -->
+                <button class="btn btn-dark" data-number>4</button>
+                <button class="btn btn-dark" data-number>5</button>
+                <button class="btn btn-dark" data-number>6</button>
+                <button class="btn btn-warning" data-operation="+">+</button>
+
+                <!-- Row 4 -->
+                <button class="btn btn-dark" data-number>7</button>
+                <button class="btn btn-dark" data-number>8</button>
+                <button class="btn btn-dark" data-number>9</button>
+                <button class="btn btn-warning" data-operation="-">-</button>
+
+                <!-- Row 5 -->
+                <button class="btn btn-dark" data-number>.</button>
+                <button class="btn btn-dark" data-number>0</button>
+                <button class="btn btn-info" data-square>x²</button>
+                <button class="btn btn-warning" data-operation="%">%</button>
+                
+                <!-- Row 6 -->
+                <button class="btn btn-success span-two mt-2" data-equals>=</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
